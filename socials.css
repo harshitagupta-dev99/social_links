@@ -1,0 +1,91 @@
+/* base css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  color: white;
+  background-color: hsl(0, 0%, 8%);
+  font-size: 16px;
+}
+
+.parent-container {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  margin: 50px 0;
+  width: 50%;
+  height: fit-content;
+  border-radius: 30px;
+  display: flex; /* the properties apply to children but define idhar hoti */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 30px;
+}
+
+.profile-pic {
+  border-radius: 100%;
+}
+
+.person-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.current-location {
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#listOfSocials {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.item {
+  /* border: 2px solid yellow; */
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+   cursor: pointer;
+ 
+}
+
+.item:hover{
+    background-color: hsl(59, 78%, 71%);
+}
+
+.item:hover .links{
+color: rgb(22, 18, 18);
+}
+
