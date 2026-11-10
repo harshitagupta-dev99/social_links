@@ -14,17 +14,18 @@
     <script defer src="index.js"></script>
   </head>
   <body>
-    <div class="parent-container">
-      <div class="main">
-        <img class="profile-pic" src="assets/avatar-jessica.jpeg" alt="profile picture of jessica"/>
-        <h3 class="person-name">Harshita Gupta</h3>
+    <main class="parent-container">
+      <section class="main" aria-labelledby="person-name">
+        <img class="profile-pic" src="assets/avatar-jessica.jpeg" alt="Profile photo of jessica" />
+        <h3 class="person-name" id="person-name">Harshita Gupta</h3>
         <h4 class="current-location">Chandigarh, India</h4>
         <p class="description">
           "Frontend Developer with 3 years of experience in Javascript , React.js & Typescript."
         </p>
-        <!-- loop through the socials here to display in UI-->
-        <ul id="listOfSocials"></ul>
-      </div>
-    </div>
+        <nav aria-label="Social profiles">
+          <ul id="listOfSocials"></ul>
+        </nav>
+      </section>
+    </main>
   </body>
 </html>

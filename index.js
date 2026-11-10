@@ -18,18 +18,28 @@ const socialLinks = [
     
 ];
 
-//first we select the ul element - then we create an li with name and link by looping over it , then we display in the UI
-
 const listOfSocials = document.getElementById("listOfSocials");
 
-socialLinks.forEach((link) => {
-    // 1. Create the li element object
-    const li = document.createElement("li");
-    li.classList.add('item');
-    // 2. Insert the anchor tag inside the li
-    li.innerHTML = `<a href="${link.url}" class="links" target="_blank">${link.name}</a>`;
+if (!listOfSocials) {
+    throw new Error("Social links list was not found.");
+}
 
-    
-    // 3. Append the physical li object directly to your list container
+socialLinks.forEach((link) => {
+    const li = document.createElement("li");
+    li.classList.add("item");
+
+    const anchor = document.createElement("a");
+    anchor.classList.add("links");
+    anchor.href = link.url;
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+    anchor.textContent = link.name;
+
+    const newTabNote = document.createElement("span");
+    newTabNote.classList.add("visually-hidden");
+    newTabNote.textContent = " (opens in a new tab)";
+    anchor.appendChild(newTabNote);
+
+    li.appendChild(anchor);
     listOfSocials.appendChild(li);
 });
