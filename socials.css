@@ -25,7 +25,7 @@ body {
 }
 
 .main {
-  width: min(100%, 50%);
+  /* width: min(100%, 50%); */
   border-radius: 1.5rem;
   display: flex; /* the properties apply to children but define idhar hoti */
   flex-direction: column;
