@@ -1,5 +1,9 @@
 # 🔗 Social Links Profile
 
+<img width="1100" height="800" alt="Screenshot (3900)" src="https://github.com/user-attachments/assets/ec887586-ecaa-42e5-9b32-131aa85d8d5a" />
+
+
+
 A clean, responsive, and accessible social links profile page built with **HTML, CSS, and Vanilla JavaScript**.
 
 I created this as a focused hands-on practice project to sharpen my core layout fundamentals, specifically **CSS Flexbox**, alignment, and **Web Accessibility (a11y)** and tested it directly using the **NVDA screen reader** to ensure an inclusive user experience.
